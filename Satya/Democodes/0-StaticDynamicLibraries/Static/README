@@ -1,0 +1,30 @@
+Steps to create static library
+------------------------------
+
+1. Create add.c common.h main.c 
+
+2. Create the object code for the file add.c by issuing the below commond
+-------------------------------------------------------------------------
+gcc -c add.c mul.c
+
+3. Create the static library for the object file add.o and mul.o
+----------------------------------------------------------------
+ar rcs libcal.a add.o mul.o
+
+Note: The name of the static library file sould be exactly in the format, lib(anyname).a
+
+4. Create the object code for the main.c, which is nothing but the driver function in this case
+-----------------------------------------------------------------------------------------------
+gcc -c main.c
+
+5. Finally, link the main.o with the static library file libcal.a
+-----------------------------------------------------------------
+gcc -o main.exe main.o -L. -lcal
+
+6. Run the binary image
+-----------------------
+./main.exe
+
+
+
+

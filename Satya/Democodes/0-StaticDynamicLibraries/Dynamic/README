@@ -1,0 +1,26 @@
+Steps to create dynamic library
+-------------------------------
+
+1. Create the files add.c mul.c main.c
+
+2. Create object files with PIC(Position Independent Code)
+----------------------------------------------------------
+gcc -c -fPIC add.c mul.c
+
+3. Create the shared library
+----------------------------
+gcc -shared -o libcal.so add.o mul.o
+
+*Note: The name of the shared object should be in the format, lib(anyname).so
+
+4. Create the object file for the main.c file
+---------------------------------------------
+gcc -c main.c
+
+5. Link the main.o with the shared object
+-----------------------------------------
+gcc -o main.exe main.o -L. -lcal
+
+6. Export the library path
+--------------------------
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$PWD"

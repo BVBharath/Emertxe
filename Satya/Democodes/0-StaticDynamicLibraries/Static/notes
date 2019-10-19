@@ -1,0 +1,13 @@
+1. For a static library, the actual code is extracted from the library by the linker and used to build the final executable at the point you compile/build your application.
+
+2. Each process gets its own copy of the code and data.
+
+3. For static libraries memory footprints are larger. 
+
+4. Since library code is connected at compile time, the final executable has no dependencies on the the library at run time i.e. no additional run-time loading costs.
+
+5. In static libraries, once everything is bundled into your application, you don’t have to worry that the client will have the right library (and version) available on their system.
+
+6. One drawback of static libraries is, for any change(up-gradation) in the static libraries, you have to recompile the main program every time.
+
+7. One major advantage of static libraries being preferred even now “is speed”. 

@@ -1,0 +1,2 @@
+This goes to the standard output too.
+This too goes into the dup.txt.
