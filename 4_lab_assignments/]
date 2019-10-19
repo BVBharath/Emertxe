@@ -1,0 +1,87 @@
+/*
+
+*/
+
+#include <stdio.h>
+
+#include <stdarg.h>
+//prototypes
+
+void my_pf(const char *format, ...);
+void actio(int *p);
+int main()
+{
+	//initialize the variables
+	char ch = 'A';
+	int a = 10;
+	float f = 1.2;
+	double d = 523652.2364;
+
+	my_pf("values are \nch = %c \n a = %d  \n a = %x \n f = %f \n d =%lf\n", ch, a, a, f, d);
+}
+
+//functions
+void my_pf(const char *format, ...)
+{
+	va_list ap;
+	va_start(ap, format);
+	char buffer[100] = {'\0'};
+	int i;
+	char ch;
+	float f;
+	double d;
+
+	const char *p = format;
+	while(*p)
+	{
+		if(*p == '%')
+		{
+			switch(*++p)
+			{
+				case 'c':
+							ch = (char) va_arg(ap, int);
+							putchar(ch);
+							break;
+
+				case 'd':
+							i =va_arg(ap, int);
+							sprintf(buffer, "%d", i);
+							puts(buffer);
+							break;
+
+				case 'f':
+							f=(float)va_arg(ap, double);
+							sprintf(buffer, "%f", f);
+							puts(buffer);
+							break;
+
+				case 'x':
+							i = va_arg(ap, int);
+							sprintf(buffer, "%x", i);
+							puts(buffer);
+				
+				case 'l':
+
+						switch(*++p)
+						{
+
+							case 'f':
+										d =va_arg(ap, double);
+										sprintf(buffer, "%lf", d);
+										puts(buffer);
+										break;
+						}
+			
+			
+			}
+		}
+		
+		else
+		{
+				putchar(*p);
+		}
+		p++;
+	}
+
+
+}
