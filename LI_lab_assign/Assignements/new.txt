@@ -1,0 +1,21 @@
+total 100
+-rw-rw-r-- 1 sunaag sunaag 1341 Jul  1 16:16 1-copy_systemcalls.c
+-rw-rw-r-- 1 sunaag sunaag 1954 Jul  1 17:26 2-word_count.c
+-rw-rw-r-- 1 sunaag sunaag  253 Jul  1 17:07 3_1_dup.c
+-rw-rw-r-- 1 sunaag sunaag  256 Jul  1 17:08 3_2_dup2.c
+-rw-rw-r-- 1 sunaag sunaag  249 Jul  1 17:08 3_3_dup3.c
+-rw-rw-r-- 1 sunaag sunaag 1127 Jul  1 17:09 5_zomb_orph.c
+-rw-rw-r-- 1 sunaag sunaag  650 Jul  1 17:12 6_non_blockwait.c
+-rw-rw-r-- 1 sunaag sunaag  805 Jul  1 17:57 7_exe_child.c
+-rw-rw-r-- 1 sunaag sunaag 1456 Jul  1 16:08 8_three_child.c
+-rwxrwxr-x 1 sunaag sunaag 8784 Jul  1 18:06 a.out
+-rw-rw-r-- 1 sunaag sunaag  250 Jul  1 10:21 common.h
+-rw-rw-r-- 1 sunaag sunaag   25 Jun 25 16:13 des.txt
+-rwxrwxr-x 1 sunaag sunaag 8520 Jun 29 11:41 exe_child
+-rw-r--r-- 1 sunaag sunaag   17 Jun 29 11:58 f1.txt
+-rw-r--r-- 1 sunaag sunaag   17 Jun 26 10:48 f2.txt
+-rw-rw-r-- 1 sunaag sunaag  868 Jul  1 18:06 IPC.c
+-rw-rw-r-- 1 sunaag sunaag  897 Jun 28 16:20 new.c
+-rwxrwxr-x 1 sunaag sunaag    0 Jul  1 18:07 new.txt
+-rw-rw-r-- 1 sunaag sunaag   25 Jun 26 12:04 source.txt
+-rwxrwxr-x 1 sunaag sunaag 8840 Jun 27 17:57 zomb_orph
